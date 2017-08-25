@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Simon Game by Paweł Pęczkowski</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
+    <script src="jQuery/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <main>
+    <div class="container text-center">
+     <div class="gameBox">
+      <div class="gameBoard">
+       <h2>SIMON</h2>
+       <div class="controlPanel">
+        <div class="d-inline-block"><h4 class="score"><p>--</p></h4><span>score</span></div>
+        <div class="d-inline-block"><h4><button class="btn-circle start" disabled></button></h4><span>start</span></div>
+        <div class="d-inline-block"><h4><button class="btn-circle init" disabled></button></h4><span>init</span><div class="led init-off"></div></div>
+        </div>
+        <div class="switch">
+         <div class="off">OFF</div>
+         <div class="on">ON</div>
+        </div>
+       </div>
+       <table class="colorBoard" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+         <tr>
+          <td id="green" class="cell green disabled"><audio id="greenS" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mp3"></audio></td>
+          <td id="blue" class="cell blue disabled"><audio id="blueS" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mp3"></audio></td>
+         </tr>
+         <tr>
+          <td id="yellow" class="cell yellow disabled"><audio id="yellowS" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mp3"></audio></td>
+          <td id="red" class="cell red disabled"><audio id="redS" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mp3"></audio></td>
+         </tr>
+       </tbody>
+      </table>
+     </div>
+    </div>
+    </main>
+    <footer class="text-center">
+     <h5>Created by Paweł Pęczkowski</h5>
+    </footer>
+  </body>
+</html>
